@@ -1,0 +1,30 @@
+OddNums.java :
+
+public class OddNums {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		int a = 7;
+		int b = 21;
+		int sum = 0;
+		System.out.println("Odd numbers from "+a+" to "+b+" are :");
+		for(int i=a;i<=b;i++) {
+		
+			if(i%2!= 0) {
+				System.out.println(i);
+				sum = sum+i;
+			}
+			
+			
+		}
+		System.out.println("Sum of Those numbers are:  "+sum);
+		
+	}
+
+}
+
+
+
+
+
