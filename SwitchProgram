@@ -1,0 +1,51 @@
+import java.util.Scanner;
+
+public class SwitchProgram {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		Scanner sc = new Scanner(System.in);
+			
+		String name;
+		int percent;
+		
+		System.out.println("!! Plese Enter Student Details");
+		switch(1) {
+		
+		case 1 : {
+			      for(int i=1;i<=10;i++) {
+			
+				  System.out.println("Enter the "+i+" Student Name ");
+			      name = sc.nextLine();
+			      System.out.println("Enter Percent ");
+			      percent = sc.nextInt();
+	
+		
+						
+		
+				  if(percent > 90) {
+				  System.out.println("A");
+		          }
+				  else if(percent>80) {
+					  System.out.println("B");
+				  }
+				  else if(percent>70) {
+					  System.out.println("C");
+				  }
+				  else if(percent>60) {
+					  System.out.println("D");
+				  }
+				  else if(percent>45) {
+					  System.out.println("E");
+				  }
+				 }
+		}
+    break;
+		default : break;
+		}
+}
+}
+	
+
+
