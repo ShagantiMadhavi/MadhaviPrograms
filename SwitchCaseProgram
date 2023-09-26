@@ -1,0 +1,104 @@
+/*Write a Java switch case program to take the students names and attendance % of 10 students as input and display their grades according to the below conditions : 
+ * 
+ * If attendance above 90 then "A"
+ * If attendance above 90-80 then "B"
+ * If attendance above 80-70 then "C"
+ * If attendance above 70-60 then "D"
+ * If attendance above 45-60 then "E"
+ * 
+ */
+
+
+import java.util.Scanner;
+
+public class SwitchProgram {
+
+	private static final int Default = 0;
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		Scanner sc = new Scanner(System.in);
+		
+
+		String name = "";
+		int percent = 0;
+		
+		System.out.println("please choose a student between 1 to 10  : ");
+		int st = sc.nextInt();
+		
+		
+		
+		switch(st) {
+		
+		case 1 : name = "Alia";
+				 percent = 90;
+				 
+				 break;
+		case 2 : name = "Anu";
+		 		 percent = 77;
+		 		 break;
+		case 3 : name = "Dipu";
+		         percent = 50;
+		         break;
+		case 4 : name = "Anurag";
+		         percent = 80;
+		         break;
+		case 5 : name = "Diya";
+		         percent = 70;
+		         break;
+		case 6 : name = "James";
+		         percent = 60;
+		         break;
+		         
+		case 7 : name = "Gosling";
+        		 percent = 45;
+        		 break;
+		case 8 : name = "Deepu";
+        		 percent = 30;
+        		 break;
+		case 9 : name = "Swati";
+        		 percent = 70;
+        		 break;
+		case 10 :name = "fatima";
+        		 percent = 95;
+        		 break;
+        
+
+		         
+		case Default : break;
+			
+			
+		}
+
+		
+		if(st>=1 && st<=10) {
+		     //System.out.println("Student Number : "+st);
+			 System.out.println("Student Name : "+name);
+		     System.out.println("Student Attendance Percentage : "+percent);
+			
+		     		if(percent>90) {
+						System.out.println("A");
+						}
+						else if(percent>80) {
+							System.out.println("Grade : B");
+						}
+						else if(percent>70) {
+							System.out.println("Grade : C");
+						}
+						else if(percent>60) {
+							System.out.println("Grade : D");
+						}
+						else if(percent>45) {
+							System.out.println("Grade : E");
+						}
+						else {
+							System.out.println("Invalid Percentage");
+						}
+					}
+		else
+		System.out.println("!!! Invalid Student Number");
+				
+	
+	}
+}
