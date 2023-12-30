@@ -26,9 +26,6 @@ public class StringReverse {
 				System.out.print(str.charAt(i));
 			}
 			//System.out.println(str.charAt(10));
-			if(str == null) {
-				
-			}
 			System.out.println();
 			
 		}
