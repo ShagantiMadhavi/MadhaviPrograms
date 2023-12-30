@@ -1,0 +1,43 @@
+package a0_com.test;
+
+import java.util.Scanner;
+
+public class StringReverse {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("Enter a String :  ");
+	
+		String str = sc.nextLine();
+		
+		//System.out.println("length = "+str.length());
+		
+		//System.out.println(str.charAt(7)); // index out of bounds exception
+		
+		String x = null;
+		System.out.println(x.length());
+		
+
+		try {
+			for(int i=str.length()-1;i>=0;i--) {
+				System.out.print(str.charAt(i));
+			}
+			//System.out.println(str.charAt(10));
+			if(str == null) {
+				
+			}
+			System.out.println();
+			
+		}
+		
+		catch(Exception e){
+			e.printStackTrace();
+			
+		}
+			
+	}
+
+}
